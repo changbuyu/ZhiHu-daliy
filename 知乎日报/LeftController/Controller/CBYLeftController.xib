@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CBYLeftController">
+            <connections>
+                <outlet property="tableView" destination="3FS-qf-F1W" id="mKD-gq-bxj"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFJ-BT-09c">
+                    <rect key="frame" x="0.0" y="26" width="320" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="BFD-Xg-5dA"/>
+                    </constraints>
+                    <inset key="titleEdgeInsets" minX="40" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="请登录" image="Menu_Avatar"/>
+                    <connections>
+                        <action selector="loginClick:" destination="-1" eventType="touchUpInside" id="54Y-Ct-hSo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pak-B1-Ghj">
+                    <rect key="frame" x="107" y="96" width="106" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="20" maxX="24" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="24" minY="0.0" maxX="0.0" maxY="20"/>
+                    <state key="normal" title="消息" image="Menu_Icon_Message"/>
+                    <connections>
+                        <action selector="messageClick:" destination="-1" eventType="touchUpInside" id="lzs-9i-ECs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Iw-KI-RzY">
+                    <rect key="frame" x="213" y="96" width="107" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="20" maxX="24" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="24" minY="0.0" maxX="0.0" maxY="20"/>
+                    <state key="normal" title="设置" image="Menu_Icon_Setting"/>
+                    <connections>
+                        <action selector="settingClick:" destination="-1" eventType="touchUpInside" id="r3p-3Q-oFM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awe-Qp-NCJ">
+                    <rect key="frame" x="0.0" y="508" width="160" height="60"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="完成" image="Menu_Download"/>
+                    <connections>
+                        <action selector="downloadClick:" destination="-1" eventType="touchUpInside" id="zoj-kN-otY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hkt-Pq-nsX">
+                    <rect key="frame" x="160" y="508" width="160" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="TQS-md-skq"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" title="夜间" image="Menu_Dark"/>
+                    <state key="selected" title="白天" image="Menu_Day"/>
+                    <connections>
+                        <action selector="modelClick:" destination="-1" eventType="touchUpInside" id="COB-GP-UyV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibP-DV-D70">
+                    <rect key="frame" x="0.0" y="96" width="107" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="w4P-aJ-cG3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="20" maxX="24" maxY="0.0"/>
+                    <inset key="imageEdgeInsets" minX="24" minY="0.0" maxX="0.0" maxY="20"/>
+                    <state key="normal" title="收藏" image="Menu_Icon_Collect"/>
+                    <connections>
+                        <action selector="collectionClick:" destination="-1" eventType="touchUpInside" id="Z13-fG-7QY"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="3FS-qf-F1W">
+                    <rect key="frame" x="0.0" y="146" width="320" height="362"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="mBh-HY-7cX"/>
+                        <outlet property="delegate" destination="-1" id="71B-TX-8dm"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.16078431372549018" green="0.18823529411764706" blue="0.21568627450980393" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Pak-B1-Ghj" firstAttribute="height" secondItem="ibP-DV-D70" secondAttribute="height" id="0CM-6P-3Rx"/>
+                <constraint firstItem="3FS-qf-F1W" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5KS-Nx-tkb"/>
+                <constraint firstItem="xFJ-BT-09c" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="5Oq-Xn-Uiz"/>
+                <constraint firstAttribute="trailing" secondItem="Hkt-Pq-nsX" secondAttribute="trailing" id="7bd-FD-Nti"/>
+                <constraint firstAttribute="trailing" secondItem="2Iw-KI-RzY" secondAttribute="trailing" id="ALZ-rp-qHd"/>
+                <constraint firstItem="2Iw-KI-RzY" firstAttribute="bottom" secondItem="ibP-DV-D70" secondAttribute="bottom" id="FcX-CT-A3j"/>
+                <constraint firstItem="2Iw-KI-RzY" firstAttribute="top" secondItem="ibP-DV-D70" secondAttribute="top" id="H0m-Zx-jkO"/>
+                <constraint firstItem="3FS-qf-F1W" firstAttribute="top" secondItem="ibP-DV-D70" secondAttribute="bottom" id="HPO-8e-fXT"/>
+                <constraint firstItem="Pak-B1-Ghj" firstAttribute="bottom" secondItem="ibP-DV-D70" secondAttribute="bottom" id="J7i-dx-TjR"/>
+                <constraint firstItem="Pak-B1-Ghj" firstAttribute="top" secondItem="ibP-DV-D70" secondAttribute="top" id="Mso-v3-Ywu"/>
+                <constraint firstItem="Hkt-Pq-nsX" firstAttribute="top" secondItem="3FS-qf-F1W" secondAttribute="bottom" id="NGv-oX-kip"/>
+                <constraint firstItem="Hkt-Pq-nsX" firstAttribute="top" secondItem="Awe-Qp-NCJ" secondAttribute="top" id="RQ1-mw-D2w"/>
+                <constraint firstAttribute="bottom" secondItem="Hkt-Pq-nsX" secondAttribute="bottom" id="Rrb-Kj-2AP"/>
+                <constraint firstItem="ibP-DV-D70" firstAttribute="top" secondItem="xFJ-BT-09c" secondAttribute="bottom" constant="20" id="ShS-9b-RK2"/>
+                <constraint firstItem="Hkt-Pq-nsX" firstAttribute="bottom" secondItem="Awe-Qp-NCJ" secondAttribute="bottom" id="TTh-9T-KCP"/>
+                <constraint firstItem="Pak-B1-Ghj" firstAttribute="leading" secondItem="ibP-DV-D70" secondAttribute="trailing" id="UPY-pl-ZiX"/>
+                <constraint firstItem="2Iw-KI-RzY" firstAttribute="width" secondItem="ibP-DV-D70" secondAttribute="width" id="W4M-Ak-D0U"/>
+                <constraint firstAttribute="trailing" secondItem="xFJ-BT-09c" secondAttribute="trailing" id="WgM-Ia-1mu"/>
+                <constraint firstItem="Hkt-Pq-nsX" firstAttribute="width" secondItem="Awe-Qp-NCJ" secondAttribute="width" id="awc-t7-D16"/>
+                <constraint firstItem="ibP-DV-D70" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="b6N-0E-mrc"/>
+                <constraint firstItem="Hkt-Pq-nsX" firstAttribute="leading" secondItem="Awe-Qp-NCJ" secondAttribute="trailing" id="edp-A4-FMC"/>
+                <constraint firstAttribute="trailing" secondItem="3FS-qf-F1W" secondAttribute="trailing" id="giH-Xy-UAv"/>
+                <constraint firstItem="Hkt-Pq-nsX" firstAttribute="height" secondItem="Awe-Qp-NCJ" secondAttribute="height" id="hUU-hz-zUC"/>
+                <constraint firstItem="xFJ-BT-09c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="26" id="hdO-hG-mOl"/>
+                <constraint firstItem="2Iw-KI-RzY" firstAttribute="leading" secondItem="Pak-B1-Ghj" secondAttribute="trailing" id="jGk-Zh-JcU"/>
+                <constraint firstItem="Awe-Qp-NCJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="sAv-jI-Ral"/>
+                <constraint firstItem="Pak-B1-Ghj" firstAttribute="width" secondItem="ibP-DV-D70" secondAttribute="width" id="xEr-wM-o52"/>
+                <constraint firstItem="2Iw-KI-RzY" firstAttribute="height" secondItem="ibP-DV-D70" secondAttribute="height" id="y1T-B1-dHo"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="470" y="401"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Menu_Avatar" width="35" height="35"/>
+        <image name="Menu_Dark" width="22" height="22"/>
+        <image name="Menu_Day" width="22" height="22"/>
+        <image name="Menu_Download" width="22" height="22"/>
+        <image name="Menu_Icon_Collect" width="20" height="20"/>
+        <image name="Menu_Icon_Message" width="20" height="20"/>
+        <image name="Menu_Icon_Setting" width="20" height="20"/>
+    </resources>
+</document>
